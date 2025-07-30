@@ -75,6 +75,7 @@ Despite advances in audio classification, the comparative performance of pretrai
    - mlxtend, pydub, tqdm
   
 ## 📊 Data Pipeline
+![data popeline](https://github.com/Daijek/UK-English-Accent-Classification-Using-Deep-Learning-Techniques/blob/main/images/data%20pipeline.png?raw=true)
 
 ### Data Preparation & Augmentation
 **Notebook:** `00_Data_Preprocessing_Augmentation.ipynb`
@@ -107,6 +108,7 @@ from audiomentations import Compose, AddGaussianNoise, AddBackgroundNoise, Pitch
   - `hop_length=512`
   - Normalization via `extract_mfcc_features` class
 - Visualize waveforms & spectrograms
+![MFCC](https://github.com/Daijek/UK-English-Accent-Classification-Using-Deep-Learning-Techniques/blob/main/images/MFCC%20spectrogram.png?raw=true)
 
 #### Data Prep
 1. Map accent labels → integers (0–5)
@@ -156,7 +158,7 @@ model = Sequential([
 | MLP   | 58.40%   |
 
 ### YamNet Flow
-[Diagram/process description from notebook]
+![Yamnet](https://github.com/Daijek/UK-English-Accent-Classification-Using-Deep-Learning-Techniques/blob/main/images/Yamnet%20flow.png?raw=true)
 
 ---
 
@@ -180,7 +182,7 @@ model = Sequential([
 | MLP   | 82.06%   | -        |
 
 ### VGGish Flow
-[Diagram/process description from notebook]
+![vggish](https://github.com/Daijek/UK-English-Accent-Classification-Using-Deep-Learning-Techniques/blob/main/images/vggish%20flow.png?raw=true)
 
 ---
 
